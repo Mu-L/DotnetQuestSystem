@@ -11,4 +11,7 @@
       $(DefaultItemExcludes);test\**\*
     </DefaultItemExcludes>
   </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\DotnetQuestSystem.Core\" />
+  </ItemGroup>
 </Project>

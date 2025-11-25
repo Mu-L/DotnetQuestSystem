@@ -17,9 +17,29 @@ DotnetQuestSystem - is a simple and powerful [Godot](https://godotengine.org/) a
 
 ## Installing
 
+### For Godot Projects (Addon)
+
 1. Download a copy of the `addons` folder
 2. Copy the `addons` folder from the downloaded file to your project directory
 3. Activate the addon in the editor `Project -> Project Settings -> Plugins`
+
+### For .NET Projects (NuGet Package)
+
+#### Using .NET CLI:
+```bash
+dotnet add package DotNetQuestSystem.Core
+```
+
+#### Using Package Manager Console:
+```powershell
+Install-Package DotNetQuestSystem.Core
+```
+
+#### Using Visual Studio:
+1. Right-click on your project in Solution Explorer
+2. Select "Manage NuGet Packages"
+3. Search for "DotNetQuestSystem.Core"
+4. Click "Install"
 
 ## Documentation
 

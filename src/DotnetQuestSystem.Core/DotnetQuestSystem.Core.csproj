@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <RootNamespace>DotNetQuestSystem.Core</RootNamespace>
+        <AssemblyName>DotNetQuestSystem.Core</AssemblyName>
+        <Nullable>enable</Nullable>
+
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>DotNetQuestSystem.Core</PackageId>
+        <Version>1.1.0</Version>
+        <Authors>TRUINGLol</Authors>
+        <Description>Simple implementation of a quest system on dotnet</Description>
+        <PackageTags>quest, game, system, quest-system</PackageTags>
+        <PackageProjectUrl>https://github.com/TRUINGLol/DotnetQuestSystem</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/TRUINGLol/DotnetQuestSystem</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="..\..\addons\dotnetquestsystem\api\**\*.cs" Link="Core\%(RecursiveDir)%(Filename)%(Extension)" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+
+</Project>
